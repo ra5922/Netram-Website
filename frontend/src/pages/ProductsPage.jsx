@@ -239,7 +239,7 @@ export default function ProductsPage() {
           </div>
         ) : visible.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-32 text-center">
-            <span className="text-5xl mb-6">🍬</span>
+            <span className="text-5xl mb-6"></span>
             <h3 className="font-serif text-brand-maroon text-3xl mb-3">
               No sweets found
             </h3>
