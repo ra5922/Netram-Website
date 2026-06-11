@@ -5,7 +5,7 @@ import { SHOP } from "@/lib/shopInfo";
 
 const links = [
   { to: "/", label: "Home", testId: "nav-home" },
-  { to: "/products", label: "Our Sweets", testId: "nav-products" },
+  { to: "/products", label: "The Counter", testId: "nav-products" },
   { to: "/about", label: "Heritage", testId: "nav-about" },
   { to: "/contact", label: "Contact", testId: "nav-contact" },
 ];
@@ -48,7 +48,7 @@ export default function Navbar() {
           <Link to="/" className="flex items-center gap-4 group">
           <img
   src="https://res.cloudinary.com/duiyvf4hb/image/upload/v1781103834/logo_vbhwqu.png"
-  alt="Netram Molchand And Sons"
+  alt="Netram Moolchand And Sons"
   className="h-14 w-14 rounded-full border-2 border-brand-gold/70 object-cover shrink-0"
 />
             <span className="flex flex-col leading-tight">

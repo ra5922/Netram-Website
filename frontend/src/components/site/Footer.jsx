@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { SHOP } from "@/lib/shopInfo";
-import { Phone, MapPin, Mail } from "lucide-react";
+import { Phone, MapPin, Mail, ExternalLink } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="flex items-center gap-3 mb-5">
           <img
   src="https://res.cloudinary.com/duiyvf4hb/image/upload/v1781103834/logo_vbhwqu.png"
-  alt="Netram Molchand And Sons"
+  alt="Netram Moolchand And Sons"
   className="h-14 w-14 rounded-full border-2 border-brand-gold/70 object-cover shrink-0"
 />
             <div className="font-serif text-2xl tracking-wide">
@@ -45,8 +45,8 @@ export default function Footer() {
               <span>{SHOP.phone}</span>
             </li>
             <li className="flex gap-3 items-center">
-              <Mail size={16} className="shrink-0 text-brand-gold" />
-              <span>{SHOP.email}</span>
+              <ExternalLink size={16} className="shrink-0 text-brand-gold" />
+              <span>{SHOP.insta}</span>
             </li>
           </ul>
         </div>
@@ -58,7 +58,7 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             {[
               { to: "/", label: "Home" },
-              { to: "/products", label: "Our Sweets" },
+              { to: "/products", label: "The Counter" },
               { to: "/about", label: "Our Heritage" },
               { to: "/contact", label: "Contact" },
             ].map((l) => (

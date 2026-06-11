@@ -88,7 +88,7 @@ export default function HomePage() {
               to="/products"
               className="inline-flex items-center gap-3 bg-brand-gold text-brand-maroon-deep px-7 py-3.5 rounded-sm uppercase tracking-[0.2em] text-xs font-medium hover:bg-brand-ivory transition-colors"
             >
-              Explore Our Sweets
+              Explore Our Counter
               <ArrowRight size={16} />
             </Link>
             <Link

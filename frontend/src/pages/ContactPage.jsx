@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapPin, Phone, Mail, Clock, Loader2, ArrowRight } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Loader2, ArrowRight, ExternalLink } from "lucide-react";
 import { toast } from "sonner";
 import { submitContact } from "@/lib/api";
 import { SHOP } from "@/lib/shopInfo";
@@ -162,21 +162,19 @@ export default function ContactPage() {
                 <a href={`tel:${SHOP.phone.replace(/\s/g, "")}`} className="block text-sm text-brand-text/85 hover:text-brand-maroon transition-colors">
                   {SHOP.phone}
                 </a>
-                <a href={`tel:${SHOP.altPhone.replace(/\s/g, "")}`} className="block text-sm text-brand-text/85 hover:text-brand-maroon transition-colors">
-                  {SHOP.altPhone}
-                </a>
+    
               </div>
             </div>
 
-            {/* Email */}
+            {/* insta */}
             <div className="flex gap-4 p-5" data-testid="contact-email">
               <div className="h-9 w-9 rounded-full bg-brand-maroon/10 text-brand-maroon flex items-center justify-center shrink-0 mt-0.5">
-                <Mail size={16} />
+              <ExternalLink size={16} />
               </div>
               <div>
-                <div className="text-[10px] tracking-[0.28em] uppercase text-brand-gold mb-1.5">Email</div>
-                <a href={`mailto:${SHOP.email}`} className="text-sm text-brand-text/85 hover:text-brand-maroon transition-colors break-all">
-                  {SHOP.email}
+                <div className="text-[10px] tracking-[0.28em] uppercase text-brand-gold mb-1.5">Instagram</div>
+                <a href={`mailto:${SHOP.insta}`} className="text-sm text-brand-text/85 hover:text-brand-maroon transition-colors break-all">
+                  {SHOP.insta}
                 </a>
               </div>
             </div>
