@@ -1,0 +1,6 @@
+/* App-level styles; most styling is handled via Tailwind utility classes. */
+.App {
+    min-height: 100vh;
+    background-color: #FDFBF7;
+    color: #2B1B1C;
+}
