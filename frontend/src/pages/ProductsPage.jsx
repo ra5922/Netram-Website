@@ -390,7 +390,7 @@ export default function ProductsPage() {
               <div className="p-6 md:p-8">
                 <button
                   onClick={() => setSelectedProduct(null)}
-                  className="absolute top-4 right-4 md:top-6 md:right-6 text-brand-text/40 hover:text-brand-maroon transition-colors"
+                    className="absolute top-4 right-4 md:top-6 md:right-6 text-brand-maroon hover:text-brand-maroon-dark transition-colors z-10 bg-brand-ivory rounded-full p-1 shadow"
                 >
                   <X size={20} />
                 </button>
@@ -408,7 +408,7 @@ export default function ProductsPage() {
                     ₹{selectedProduct.price_inr}
                   </span>
                   <span className="text-sm text-brand-text/50">
-                    per {selectedProduct.unit}
+                     {selectedProduct.unit}
                   </span>
                 </div>
                 
