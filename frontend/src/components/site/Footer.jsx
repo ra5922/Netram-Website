@@ -1,18 +1,19 @@
 import { Link } from "react-router-dom";
 import { SHOP } from "@/lib/shopInfo";
-import { Phone, MapPin, Mail, ExternalLink } from "lucide-react";
+import { Phone, MapPin, ExternalLink } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="bg-brand-maroon-dark text-brand-ivory mt-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-16 grid gap-12 md:grid-cols-3">
+
         <div>
           <div className="flex items-center gap-3 mb-5">
-          <img
-  src="https://res.cloudinary.com/duiyvf4hb/image/upload/v1781103834/logo_vbhwqu.png"
-  alt="Netram Moolchand And Sons"
-  className="h-14 w-14 rounded-full border-2 border-brand-gold/70 object-cover shrink-0"
-/>
+            <img
+              src="https://res.cloudinary.com/duiyvf4hb/image/upload/v1781103834/logo_vbhwqu.png"
+              alt="Netram Moolchand And Sons"
+              className="h-14 w-14 rounded-full border-2 border-brand-gold/70 object-cover shrink-0"
+            />
             <div className="font-serif text-2xl tracking-wide">
               {SHOP.name}
             </div>
@@ -46,7 +47,14 @@ export default function Footer() {
             </li>
             <li className="flex gap-3 items-center">
               <ExternalLink size={16} className="shrink-0 text-brand-gold" />
-              <span>{SHOP.insta}</span>
+              <a
+                href={SHOP.insta}
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-brand-gold transition-colors"
+              >
+                Instagram
+              </a>
             </li>
           </ul>
         </div>
@@ -83,15 +91,15 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-      </div>
 
+      </div>
       <div className="border-t border-brand-ivory/10">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-6 text-xs text-brand-ivory/60 flex flex-col md:flex-row items-center justify-between gap-2">
           <span>
             © {new Date().getFullYear()} {SHOP.name}. All rights reserved.
           </span>
           <span className="tracking-[0.25em] uppercase">
-            Crafted with ghee, saffron & patience.
+            Crafted with ghee, saffron &amp; patience.
           </span>
         </div>
       </div>

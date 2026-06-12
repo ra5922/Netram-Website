@@ -8,7 +8,7 @@ export const SHOP = {
       "Uttar Pradesh, India",
     ],
     phone: "+91 7310350360",
-    insta: "netram.moolchand",
+    insta: "https://www.instagram.com/netram.moolchand",
     hours: [
       { day: "Monday – Sunday", time:"7:00 AM – 11:00 PM" },
     ],

@@ -166,18 +166,23 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* insta */}
-            <div className="flex gap-4 p-5" data-testid="contact-email">
-              <div className="h-9 w-9 rounded-full bg-brand-maroon/10 text-brand-maroon flex items-center justify-center shrink-0 mt-0.5">
-              <ExternalLink size={16} />
-              </div>
-              <div>
-                <div className="text-[10px] tracking-[0.28em] uppercase text-brand-gold mb-1.5">Instagram</div>
-                <a href={`mailto:${SHOP.insta}`} className="text-sm text-brand-text/85 hover:text-brand-maroon transition-colors break-all">
-                  {SHOP.insta}
-                </a>
-              </div>
-            </div>
+          {/* insta */}
+<div className="flex gap-4 p-5" data-testid="contact-email">
+  <div className="h-9 w-9 rounded-full bg-brand-maroon/10 text-brand-maroon flex items-center justify-center shrink-0 mt-0.5">
+    <ExternalLink size={16} />
+  </div>
+  <div>
+    <div className="text-[10px] tracking-[0.28em] uppercase text-brand-gold mb-1.5">Instagram</div>
+    <a 
+      href={SHOP.insta}
+      target="_blank"
+      rel="noreferrer"
+      className="text-sm text-brand-text/85 hover:text-brand-maroon transition-colors break-all"
+    >
+      {SHOP.insta}
+    </a>
+  </div>
+</div>
 
             {/* Hours */}
             <div className="flex gap-4 p-5" data-testid="contact-hours">

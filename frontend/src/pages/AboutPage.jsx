@@ -16,8 +16,8 @@ const MILESTONES = [
   },
   {
     year: "Late 1800s",
-    title: "Shri Molchand carries the flame",
-    body: "Shri Molchand joins his father's counter, and the signboard is proudly repainted: Netram Molchand And Sons. Festive trays begin travelling to weddings across the district.",
+    title: "Shri Moolchand carries the flame",
+    body: "Shri Moolchand joins his father's counter, and the signboard is proudly repainted: Netram Molchand And Sons. Festive trays begin travelling to weddings across the district.",
   },
   {
     year: "1920s – 1930s",
